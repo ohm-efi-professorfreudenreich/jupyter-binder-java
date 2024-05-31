@@ -1,7 +1,7 @@
 FROM eclipse-temurin:21-jdk-jammy
 
 RUN apt-get update
-RUN apt-get install -y python3-pip unzip
+RUN apt-get install -y python3-pip unzip graphviz
 
 # add requirements.txt, written this way to gracefully ignore a missing file
 COPY requirements.tx[t] .
