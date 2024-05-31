@@ -30,6 +30,7 @@ RUN adduser --disabled-password \
     --uid $NB_UID \
     $NB_USER
 
+COPY example.txt .
 COPY . $HOME
 RUN chown -R $NB_UID $HOME
 
