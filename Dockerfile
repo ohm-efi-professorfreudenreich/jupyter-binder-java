@@ -34,8 +34,8 @@ COPY example.txt .
 # Kopiere die graph.jar-Datei in das Docker-Image
 COPY graph.jar /usr/local/lib/graph.jar
 
-# Konfiguriere den Klassenpfad für iJava
-RUN echo "export CLASSPATH=\$CLASSPATH:/usr/local/lib/graph.jar" >> /usr/local/bin/start-notebook.d/ijava-kernel.sh
+# Set the classpath for iJava
+ENV CLASSPATH=/usr/local/lib/graph.jar
 
 COPY . $HOME
 RUN chown -R $NB_UID $HOME
