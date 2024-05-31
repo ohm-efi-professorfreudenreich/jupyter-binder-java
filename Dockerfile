@@ -31,6 +31,12 @@ RUN adduser --disabled-password \
     $NB_USER
 
 COPY example.txt .
+# Kopiere die graph.jar-Datei in das Docker-Image
+COPY graph.jar /usr/local/lib/graph.jar
+
+# Konfiguriere den Klassenpfad für iJava
+RUN echo "export CLASSPATH=\$CLASSPATH:/usr/local/lib/graph.jar" >> /usr/local/bin/start-notebook.d/ijava-kernel.sh
+
 COPY . $HOME
 RUN chown -R $NB_UID $HOME
 
