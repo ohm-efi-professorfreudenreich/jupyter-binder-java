@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+# Install IJava kernel
+wget -q https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip
+unzip ijava-1.3.0.zip -d ijava
+python3 ijava/install.py --sys-prefix
