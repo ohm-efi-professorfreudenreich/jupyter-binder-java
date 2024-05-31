@@ -21,7 +21,7 @@ RUN unzip ijava-kernel.zip -d ijava-kernel \
 
 # Set up the user environment
 
-ENV NB_USER jovyan
+ENV NB_USER user
 ENV NB_UID 1000
 ENV HOME /home/$NB_USER
 
@@ -35,7 +35,9 @@ COPY example.txt .
 COPY graph.jar /usr/local/lib/graph.jar
 
 # Set the classpath for iJava
-ENV CLASSPATH=/usr/local/lib/graph.jar
+#ENV CLASSPATH=/usr/local/lib/graph.jar
+RUN echo "export CLASSPATH=\$CLASSPATH:/usr/local/lib/graph.jar" > /usr/local/bin/set_classpath.sh && \
+    chmod +x /usr/local/bin/set_classpath.sh
 
 COPY . $HOME
 RUN chown -R $NB_UID $HOME
