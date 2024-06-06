@@ -1,5 +1,5 @@
-Recipe: Greek Salad
-Ingredients: Tomato, Feta, Cucumber
+Rezept: Kaiserschmarrn
+Zutaten: Mehl, Milch, Eier, Zucker, Salz, Butter, Rosinen, Puderzucker, Apfelmus
 
-Recipe: Spaghetti Carbonara
-Ingredients: Spaghetti, Egg, Pancetta, Parmesan
+Rezept: Kartoffelsalat
+Zutaten: Kartoffeln, Zwiebeln, Essig, Öl, Salz, Pfeffer, Senf, Brühe, Petersilie
