@@ -31,6 +31,7 @@ RUN adduser --disabled-password \
     $NB_USER
 
 COPY example.txt .
+COPY recipe_graph.png .
 # Kopiere die graph.jar-Datei in das Docker-Image
 COPY graph.jar /usr/local/lib/graph.jar
 
