@@ -1,5 +1,2 @@
 Rezept: Kaiserschmarrn
 Zutaten: Mehl, Milch, Eier, Zucker, Salz, Butter, Rosinen, Puderzucker, Apfelmus
-
-Rezept: Kartoffelsalat
-Zutaten: Kartoffeln, Zwiebeln, Essig, Öl, Salz, Pfeffer, Senf, Brühe, Petersilie
